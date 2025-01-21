@@ -1,0 +1,195 @@
+/* 主要的 section 样式 */
+.chat-section {
+    height: 720px;
+    margin: 0;
+
+}
+
+.chat-section .container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 600px;
+    display: flex;
+    border: 3px solid #e53891; /* 设置边框，2px宽度，黑色 */ 
+    border-top-left-radius: 15px; /* 右上角 */
+    border-top-right-radius: 15px; /* 右上角 */
+    border-bottom-right-radius: 15px; /* 右下角 */
+    border-bottom-left-radius: 15px; /* 左下角 */
+    box-sizing: border-box; /* 包括边框在内计算元素总宽度和高度 */
+    background-color: rgb(251, 222, 236);
+}
+
+.chat-section .sidebar {
+    margin-top: 30px;
+    margin-left: 20px;
+    background: #f7f5f5;
+    width: 260px;
+    height: 530px;
+    transition: width 0.2s;
+    overflow: auto;
+    background-color: rgb(237, 235, 235);
+    border-top-left-radius: 15px; /* 右上角 */
+    border-top-right-radius: 15px; /* 右上角 */
+    border-bottom-right-radius: 15px; /* 右下角 */
+    border-bottom-left-radius: 15px; /* 左下角 */
+}
+
+.chat-section .sidebar-nav {
+    padding: 12px;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.chat-section .history {
+    margin-top: 20px;
+    font-size: .75rem;
+    height:450px;
+    overflow-y: auto;
+
+}
+
+.chat-section .history .title {
+    font-weight: bold;
+}
+
+.chat-section .history .msg-item {
+    white-space: nowrap;
+    font-size: 1rem;
+    margin-top: 16px;
+    overflow-x: hidden;
+}
+
+.chat-section .history .his {
+    margin-bottom: 24px;
+}
+
+.chat-section .history .yesterday {
+    margin-bottom: 24px;
+}
+
+.chat-section .history .last-7days {
+    margin-bottom: 24px;
+}
+
+.chat-section .history .last-30days {
+    margin-bottom: 24px;
+}
+
+.chat-section .content {
+    flex: 1;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-section .fold {
+    font-size: 30px;
+    color: #7d7d7d;
+}
+
+.chat-section #btn-fold-out {
+    display: none;
+}
+
+.chat-section .content-log {
+    flex: 1;
+}
+
+.chat-section .content-nav {
+    height: 100px;
+}
+
+.chat-section .content-footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-section .input-chat-wrapper {
+    width: 700px;
+    background-color: rgb(237, 235, 235);
+    border-radius: 26px;
+    padding: .375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-section   #new-chat {
+    margin-left: .900rem;
+    font-size: 28px;
+    color: #7d7d7d;
+}
+
+.chat-section #input-chat {
+    outline: none;
+    border: none;
+    color: #0d0d0d;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: .5rem .75rem;
+}
+
+.chat-section #input-send {
+    color: #d1d1d1;
+    font-size: 32px;
+    margin: 3px;
+}
+
+.chat-section #res-log {
+    overflow-y: auto;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 400px;
+    /* background-color: rgb(35, 3, 3); */
+}
+
+.chat-section .self-msg {
+    padding-bottom: .625rem;
+    padding-top: .625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: rgb(244, 244, 244);
+    border-radius: 1.5rem;
+    align-self: flex-end;
+    margin-bottom: 24px;
+}
+
+.chat-section .llm-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(238, 238, 238);
+    border-radius: 1.5rem;
+    padding-top: .950rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.chat-section .llm-msg p {
+    word-wrap: break-word;
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 24px;
+}
+
+.chat-section .llm-msg .tool-bar span {
+    padding: 5px;
+}
+
+.chat-section .llm-msg .tool-bar span:hover {
+    background-color: #f9f9f9;
+}
+
+.chat-section ::-webkit-scrollbar {
+    display: none;
+}
+

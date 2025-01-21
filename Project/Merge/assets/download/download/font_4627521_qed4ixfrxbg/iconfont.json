@@ -1,0 +1,16 @@
+{
+  "id": "4627521",
+  "name": "hhh",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39480941",
+      "name": "新对话",
+      "font_class": "xinduihua",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    }
+  ]
+}
